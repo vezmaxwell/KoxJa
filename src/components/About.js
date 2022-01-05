@@ -1,5 +1,8 @@
 import React from 'react'
 
+import Katy from '../components/Katy'
+import Jodie from '../components/Jodie'
+
 // Bring image in
 
 const About = () => {
@@ -12,9 +15,20 @@ const About = () => {
 
   return (
     <div className="about-page">
-      <h1>{studio.name}</h1>
-      <img src={studio.imgURL} alt={studio.imgURL} />
-      <p className="studio-about">{studio.about}</p>
+      <div className="about-studio">
+        <h1>{studio.name}</h1>
+        <img src={studio.imgURL} alt={studio.imgURL} />
+        <p className="studio-about">{studio.about}</p>
+      </div>
+
+      <div className="about-katy">
+        <Katy />
+      </div>
+
+      <div className="about-jodie">
+        <Jodie />
+      </div>
+      
     </div>
   )
 }

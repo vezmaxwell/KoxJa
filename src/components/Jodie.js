@@ -11,7 +11,7 @@ const Jodie = () => {
   }
 
   return (
-    <div className="about-page">
+    <div className="about-page" id="about-jodie">
       <h1>{jodie.name}</h1>
       <img src={jodie.imgURL} alt={jodie.imgURL} />
       <p className="studio-about">{jodie.about}</p>
