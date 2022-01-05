@@ -27,13 +27,26 @@ const Navbar = () => {
           <li className="gallery">Gallery</li>
         </Link>
 
-        <Link to="#">
-          <li className="artists">Artists</li>
+        <Link to="/about">
+          <li className="artists">About</li>
         </Link>
 
         <Link to="#">
           <li className="contacts">Contacts</li>
         </Link>
+      </div>
+
+{/* Display this only on the artists page */}
+      <div className="navbar-artists">
+            
+        <Link to="#">
+          <li className="navbar-katy">Katy</li>
+        </Link>
+
+        <Link to="#">
+          <li className="navbar-jodie">Contacts</li>
+        </Link>
+
       </div>
 
     </div>

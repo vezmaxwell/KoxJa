@@ -2,15 +2,21 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Navbar from './components/Navbar'
+import About from './components/About'
+
+
 
 function App() {
+  
   return (
     <Router>
       <Navbar />
-      <h2>SUP</h2>
+
       <Routes>
-        <Route path="/" />
+        <Route path="/about" element={<About />}/>
       </Routes>
+
+
     </Router>
   )
 }
