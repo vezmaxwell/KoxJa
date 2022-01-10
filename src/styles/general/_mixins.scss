@@ -1,0 +1,16 @@
+
+@mixin navBasic($color, $height) {
+  background-color: $color;
+  height: $height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  font-size: 22px;
+  text-transform: uppercase;
+  list-style-type: none;
+    a {
+      text-decoration: none;
+      margin: 0px 28px;
+    }
+}

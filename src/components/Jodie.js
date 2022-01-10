@@ -14,10 +14,10 @@ const Jodie = () => {
 
   return (
     <>
-      <div className="about-page" id="about-jodie">
-        <h1>{jodie.name}</h1>
-        <img src={jodie.img} alt={jodie.imgURL} />
-        <p className="studio-about">{jodie.about}</p>
+      <div className="about-artist-container" id="about-jodie">
+        <h1 className="name">{jodie.name}</h1>
+        <img src={jodie.img} alt={jodie.imgURL} className="artist-img" />
+        <p className="about">{jodie.about}</p>
       </div>
 
       <ArtistFooter />

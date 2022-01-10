@@ -1,0 +1,5 @@
+@use "../general/index" as *;
+
+.footer {
+  @include navBasic($tan, 93px);
+}

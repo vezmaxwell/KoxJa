@@ -1,2 +1,24 @@
-@use '../general/index' as *;
+@use "../general/index" as *;
 
+.about-page {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  .name {
+    font-family: $nameFont;
+    font-size: 48px;
+  }
+  .about {
+    font-size: 22px;
+    text-align: justify;
+    width: auto;
+    background-color: pink;
+    margin: 0px 42px;
+    p {
+      width: 296px;
+      font-weight: 400;
+    }
+  }
+
+}

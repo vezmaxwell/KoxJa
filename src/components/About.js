@@ -1,9 +1,17 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
+// Import artist components
 import Katy from '../components/Katy'
 import Jodie from '../components/Jodie'
+import ArtistNav from '../components/ArtistNav'
 
+// Import images
 import Studio from '../images/other/studio.jpeg'
+
+// Import styles
+import '../styles/components/_about.scss'  
+import '../styles/components/_aboutArtists.scss'  
 
 // Bring image in
 
@@ -18,16 +26,19 @@ const About = () => {
   return (
     <div className="about-page">
       <div className="about-studio">
-        <h1>{studio.name}</h1>
+
+        <ArtistNav />
+
+        <h1 className="name">{studio.name}</h1>
         <img src={studio.imgURL} alt={studio.imgURL} />
-        <p className="studio-about">{studio.about}</p>
+        <p className="about">{studio.about}</p>
       </div>
 
-      <div className="about-katy">
+      <div id="about-katy">
         <Katy />
       </div>
 
-      <div className="about-jodie">
+      <div id="about-jodie">
         <Jodie />
       </div>
       

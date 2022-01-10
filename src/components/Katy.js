@@ -4,7 +4,7 @@ import ArtistFooter from '../components/ArtistFooter'
 
 import katyImg from '../images/artists/katy.jpeg'
 
-const Katy = (instagram) => {
+const Katy = () => {
 
   const katy = {
     name: "Katy",
@@ -14,11 +14,10 @@ const Katy = (instagram) => {
 
   return (
     <>
-      <div className="about-page">
-        <h1>{katy.name}</h1>
-        <img src={katy.imgURL} alt={katy.imgURL} />
-        <p className="studio-about">{katy.about}</p>
-        <img src={instagram} alt="" />
+      <div className="about-artist-container" id="about-katy">
+        <h1 className="name">{katy.name}</h1>
+        <img src={katy.imgURL} alt={katy.imgURL} className="artist-img" />
+        <p className="about">{katy.about}</p>
       </div>
 
       <ArtistFooter />

@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 // Component Imports
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 import About from './components/About'
 import Contact from './components/Contact'
 import Gallery from './components/Gallery'
@@ -42,7 +43,7 @@ function App() {
         <Route path="/jodie" element={<Jodie />}/>
       </Routes>
 
-
+      <Footer />
     </Router>
   )
 }

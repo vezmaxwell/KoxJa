@@ -1,23 +1,8 @@
-@use '../general/index' as *;
-
+@use "../general/index" as *;
 
 .navbar {
-  background-color: $tan;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 93px;
-  font-size: 22px;
-  text-transform: uppercase;
-  list-style-type: none;
-
-    a {
-      text-decoration: none;
-      margin: 0px 28px;
-    }
+  @include navBasic($tan, 93px);
 }
-
 
 
 // Makes logo + ig logo disapear for mobile view
@@ -25,13 +10,4 @@
   display: none;
 }
 
-.navbar-artists {
-  display: none;
-}
 
-
-
-// .logo {
-//   width: 325px;
-//   margin: 32px;
-// }
