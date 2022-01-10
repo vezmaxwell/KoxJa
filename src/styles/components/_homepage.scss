@@ -1,0 +1,23 @@
+@use "../general/index" as *;
+
+.homepage-container {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .home-logo {
+    width: 325px;
+  }
+  .abstract-box {
+    height: 376px;
+    width: 100vw;
+    margin-left: 300px;
+    .abstract {
+      width: 638px;
+      overflow: hidden;
+      float: right;
+    }
+  }
+}

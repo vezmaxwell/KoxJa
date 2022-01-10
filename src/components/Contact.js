@@ -1,6 +1,11 @@
 import React from 'react'
 
+import instagram from '../images/icons/instagram.png'
+import email from '../images/icons/envelope.png'
+
 const Contact = () => {
+
+  
   return (
     <div className="contact-page">
       
@@ -12,6 +17,8 @@ const Contact = () => {
       <div className="contact-emails">
         <a href="katy@tattoo.com" className="">katy@tattoo.com</a>
         <a href="jodie@tattoo.com" className="">jodie@tattoo.com</a>
+        <img src={instagram} alt="instagram icon" />
+        <img src={email} alt="instagram icon" />
       </div>
 
     </div>
