@@ -1,1 +1,25 @@
-@use '../general/index' as *
+@use '../general/index' as *;
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  .contact-emails {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 200px;
+    background-color: $green;
+    text-align: center;
+    margin: 10px 0px;
+    a {
+      color: $beige;
+      font-weight: bold;
+    }
+  }
+  .contact-text {
+    width: auto;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: justify;
+  }
+}

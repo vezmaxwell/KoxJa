@@ -25,23 +25,23 @@ function App() {
       </Routes>
 
       <Routes>
-        <Route path="/about" element={<About />}/>
+        <Route exact path="/about" element={<About />}/>
       </Routes>
 
       <Routes>
-        <Route path="/contact" element={<Contact />}/>
+        <Route exact path="/contact" element={<Contact />}/>
       </Routes>
 
       <Routes>
-        <Route path="/gallery" element={<Gallery />}/>
+        <Route exact path="/gallery" element={<Gallery />}/>
       </Routes>
 
       <Routes>
-        <Route path="/katy" element={<Katy />}/>
+        <Route exact path="/katy" element={<Katy />}/>
       </Routes>
 
       <Routes>
-        <Route path="/jodie" element={<Jodie />}/>
+        <Route exact path="/jodie" element={<Jodie />}/>
       </Routes>
 
       <Footer />

@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+
 
 // Images
 import Logo from '../images/homepage/logo.png'
@@ -10,6 +11,40 @@ import '../styles/components/_navbar.scss'
 
 
 const Navbar = () => {
+
+  const [gallery, setGallery] = useState(false)
+  const [about, setAbout] = useState(false)
+  const [contact, setContact] = useState(false)
+
+  // const select = (event) => {
+  //   try {
+  //     event.preventDefault()
+  //     setGallery(true)
+  //     console.log("You selected an item")
+  //   } catch (error) {
+  //     console.log("This didn't work")
+  //   }
+  // }
+
+  const select = (event) => {
+    try {
+      if (event.target.id === "gallery") {
+        setGallery(true)
+        setAbout(false)
+        setContact(false)
+      } else if (event.target.id === "about") {
+        setAbout(true)
+        setGallery(false)
+        setContact(false)
+      } else {
+        setContact(true)
+        setAbout(false)
+        setGallery(false)
+      }
+    } catch (error) {
+      console.log("Oops, that didn't work!")
+    }
+  }
 
   return (
     <div className="navbar-container">
@@ -28,15 +63,15 @@ const Navbar = () => {
 
       <div className="navbar navbar-mobile">
         <Link to="/gallery">
-          <li className="gallery">Gallery</li>
+          <li className={gallery ? "selected" : ""} onClick={select} id="gallery">Gallery</li>
         </Link>
 
         <Link to="/about">
-          <li className="artists">About</li>
+          <li className={about ? "selected" : ""} onClick={select} id="about">About</li>
         </Link>
 
         <Link to="/contact">
-          <li className="contact">Contact</li>
+          <li className={contact ? "selected" : ""} onClick={select} id="contact">Contact</li>
         </Link>
       </div>
 

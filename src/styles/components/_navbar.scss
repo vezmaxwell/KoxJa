@@ -4,6 +4,9 @@
   @include navBasic($tan, 93px);
 }
 
+.selected {
+  font-weight: bold;
+}
 
 // Makes logo + ig logo disapear for mobile view
 .navbar-desktop {
