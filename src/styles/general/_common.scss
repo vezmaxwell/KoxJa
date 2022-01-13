@@ -1,5 +1,15 @@
+@use "../general/colors" as *;
+
 * {
   margin: 0;
   padding: 0; 
   color: black;
+}
+
+body {
+  background-color: $beige;
+}
+
+.instagram-logo, .email-logo{
+  width: 36px;
 }

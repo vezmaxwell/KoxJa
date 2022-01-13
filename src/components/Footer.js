@@ -11,8 +11,8 @@ const Footer = () => {
   return (
     
     <div className="footer">
-      <Link to="https://www.instagram.com/koxja_tattoo/?hl=en" target="_blank">
-        <img src={Instagram} alt="instagram logo" />
+      <Link to="https://www.instagram.com/koxja_tattoo/?hl=en" target="_blank" rel="noreferrer noopener">
+        <img src={Instagram} alt="instagram logo" className="instagram-logo"/>
       </Link>
     </div>
 

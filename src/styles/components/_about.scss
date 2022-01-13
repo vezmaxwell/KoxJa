@@ -8,6 +8,8 @@
   .name {
     font-family: $nameFont;
     font-size: 48px;
+    margin-top: 42px;
+    margin-bottom: 28px;
   }
   .about {
     font-size: 22px;
@@ -15,6 +17,7 @@
     width: auto;
     background-color: pink;
     margin: 0px 42px;
+    margin-bottom: 28px;
     p {
       width: 296px;
       font-weight: 400;
