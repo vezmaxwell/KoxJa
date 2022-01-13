@@ -1,6 +1,5 @@
 @use "../general/index" as *;
 
 .artistFooter {
-  background-color: $brown;
-  height: 93px;
+  @include navBasic($brown, 93px);
 }

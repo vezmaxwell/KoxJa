@@ -12,16 +12,16 @@
     margin-bottom: 28px;
   }
   .about {
-    font-size: 22px;
+    font-size: 18px;
     text-align: justify;
     width: auto;
-    background-color: pink;
-    margin: 0px 42px;
+    margin: 42px 42px;
     margin-bottom: 28px;
-    p {
-      width: 296px;
-      font-weight: 400;
-    }
   }
-
+  .studio-img {
+    width: 293px;
+  }
+  .artist-img {
+    width: 200px;
+  }
 }
