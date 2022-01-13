@@ -1,7 +1,7 @@
-// store images in an array 
-// map through them in the jsx 
-
 import React from 'react'
+
+// Import componenents
+import ArtistNav from '../components/ArtistNav'
 
 // Imported images
 import t1 from '../images/tattoos/tat1.jpg'
@@ -46,6 +46,9 @@ const Gallery = () => {
           })
         }
         </div>
+
+        <a href="#top" className="top">Back to top</a>
+
 
     </div>
   )

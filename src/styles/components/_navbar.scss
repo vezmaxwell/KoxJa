@@ -1,16 +1,12 @@
 @use "../general/index" as *;
 
-.navbar {
-  @include navBasic($tan, 93px);
+.navbar-container { 
+  .navbar {
+    @include navBasic($tan, 60px);
+  }
+
+  
+  .navbar-logo {
+    width: 100px;
+  }
 }
-
-.selected {
-  font-weight: bold;
-}
-
-// Makes logo + ig logo disapear for mobile view
-.navbar-desktop {
-  display: none;
-}
-
-

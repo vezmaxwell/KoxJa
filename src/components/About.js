@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 // Import artist components
 import Katy from '../components/Katy'
@@ -25,14 +24,18 @@ const About = () => {
 
   return (
     <div className="about-page">
+
+      <ArtistNav />
+      
       <div className="about-studio">
 
-        <ArtistNav />
 
         <h1 className="name">{studio.name}</h1>
         <img src={studio.imgURL} alt={studio.imgURL} className="studio-img"/>
         <p className="about">{studio.about}</p>
       </div>
+
+
 
       <div id="about-katy">
         <Katy />
@@ -40,8 +43,11 @@ const About = () => {
 
       <div id="about-jodie">
         <Jodie />
+    
       </div>
-      
+
+      <a href="#top" className="top">Back to top</a>
+
     </div>
   )
 }

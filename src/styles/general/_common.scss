@@ -10,3 +10,18 @@ body {
   background-color: $beige;
 }
 
+.top {
+  background-color: $green;
+  color: $beige;
+  position: sticky;
+  bottom: 0;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.selected {
+  font-weight: bold;
+}

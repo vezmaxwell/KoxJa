@@ -1,0 +1,10 @@
+@use "../general/index" as *;
+
+.navbar-artists {
+  @include navBasic($green, 60px);
+  position: sticky;
+  top: 0;
+  li {
+    color: $beige;
+  }
+}

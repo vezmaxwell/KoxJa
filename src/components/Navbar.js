@@ -3,11 +3,10 @@ import { Link } from 'react-router-dom'
 
 
 // Images
-import Logo from '../images/homepage/logo.png'
+import Logo from '../images/homepage/logo_cropped.png'
 
 // Styles
 import '../styles/components/_navbar.scss'  
-
 
 
 const Navbar = () => {
@@ -15,16 +14,7 @@ const Navbar = () => {
   const [gallery, setGallery] = useState(false)
   const [about, setAbout] = useState(false)
   const [contact, setContact] = useState(false)
-
-  // const select = (event) => {
-  //   try {
-  //     event.preventDefault()
-  //     setGallery(true)
-  //     console.log("You selected an item")
-  //   } catch (error) {
-  //     console.log("This didn't work")
-  //   }
-  // }
+  const [home, setHome] = useState(false)
 
   const select = (event) => {
     try {
@@ -32,14 +22,22 @@ const Navbar = () => {
         setGallery(true)
         setAbout(false)
         setContact(false)
+        setHome(false)
       } else if (event.target.id === "about") {
         setAbout(true)
         setGallery(false)
         setContact(false)
-      } else {
+        setHome(false)
+      } else if (event.target.id === "contact"){
         setContact(true)
         setAbout(false)
         setGallery(false)
+        setHome(false)
+      } else {
+        setHome(true)
+        setAbout(false)
+        setGallery(false)
+        setContact(false)
       }
     } catch (error) {
       console.log("Oops, that didn't work!")
@@ -55,7 +53,7 @@ const Navbar = () => {
       <div className="navbar navbar-desktop">
 
         <Link to="/">
-          <img src={Logo} alt="koxja logo" className="navbar-logo"/>
+          <img src={Logo} alt="koxja logo" className="navbar-logo" onClick={select} id="home"/>
         </Link>
 
       </div>
