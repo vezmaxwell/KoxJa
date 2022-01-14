@@ -24,4 +24,27 @@
   .artist-img {
     width: 200px;
   }
+
+  @media only screen and (min-width: 700px) {
+    .studio-img {
+      width: 600px;
+      margin: 60px;
+    }
+    .artist-img {
+      width: 500px;
+      }
+    .name {
+      font-size: 70px;
+      margin: 60px;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .studio-img {
+      width: 950px;
+    }
+    .about {
+      margin: 120px;
+    }
+  }
 }

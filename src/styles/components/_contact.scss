@@ -1,25 +1,44 @@
 @use '../general/index' as *;
 
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  .contact-emails {
+.contact-page {
+  .contact-info {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    height: 200px;
-    background-color: $green;
-    text-align: center;
-    margin: 10px 0px;
-    a {
-      color: $beige;
-      font-weight: bold;
+    .contact-emails {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height: 200px;
+      background-color: $green;
+      text-align: center;
+      margin: 10px 0px;
+      a {
+        color: $beige;
+        font-weight: bold;
+      }
+    }
+    .contact-text {
+      width: auto;
+      margin-top: 20px;
+      padding: 20px;
+      text-align: justify;
+    }
+  
+    @media only screen and (min-width: 700px) {
+      height: 82vh;
+      .contact-emails {
+        height: 400px;
+      }
+      .contact-text {
+        margin: 120px 50px;
+      }
+    }
+    @media only screen and (min-width: 1000px) {
+      .contact-text {
+        margin: 150px 150px 100px;
+      }
+    }
+      
+
     }
   }
-  .contact-text {
-    width: auto;
-    margin-top: 20px;
-    padding: 20px;
-    text-align: justify;
-  }
-}

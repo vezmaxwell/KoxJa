@@ -1,12 +1,10 @@
 @use "../general/index" as *;
 
-.navbar-container { 
+.navbar-container {
   .navbar {
     @include navBasic($tan, 60px);
-  }
-
-  
-  .navbar-logo {
-    width: 100px;
+    .navbar-logo {
+      width: 100px;
+    }
   }
 }

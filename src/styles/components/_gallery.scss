@@ -1,10 +1,10 @@
-@use '../general/index' as *;
+@use "../general/index" as *;
 
 .gallery-container {
-    img {
-      width: 181px;
-      margin: 16px;
-    }
+  img {
+    width: 181px;
+    margin: 16px;
+  }
 
   .tatt-map {
     display: flex;
@@ -23,5 +23,12 @@
     color: $beige;
     width: 100vw;
     height: 93px;
+  }
+
+  @media only screen and (min-width: 700px) {
+    img {
+      width: 500px;
+      margin: 80px;
+    }
   }
 }
